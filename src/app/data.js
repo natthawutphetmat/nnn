@@ -1,5 +1,5 @@
 export async function getData() {
-    const res = await fetch('http://localhost:3000/api/api')
+    const res = await fetch('http://localhost:3001/api/api')
   
    
     if (!res.ok) {
