@@ -1,29 +1,87 @@
 header {
-    height: 900px;
-    position: relative;
+    height: 750px;
+    background-image: url("bg.jpg");
+    background-size: 100% 100% ;
     text-align: center;
+
 }
+
 
 .box {
-    top: 0;
-    height: 900px;
-    position: absolute;
     max-width: 400px;
+    margin: 0 auto;
+    height: 750px;
     overflow: auto;
-    cursor: default;
-    margin: auto;
-    left: 40%;
-
+    display: none;
+}
+.boxs {
+    max-width: 400px;
+    margin: 0 auto;
+    height: 750px;
+    overflow: auto;
+    display: block;
 }
 
-.box img {
+
+.img{
     width: 100%;
-
-
 }
+
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.image-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: slideDown 3s ease forwards;
+}
+
+
+
+
+
+
 
 @media screen and (max-width:480px ) {
+ 
     .box {
-        left: 0;
+        max-width: 400px;
+        margin: 0 auto;
+        height: 750px;
+        overflow: auto;
+        display: block;
     }
+    
+    
+    
+    .img{
+        width: 100%;
+    }
+
+    .boxs {
+        max-width: 400px;
+        margin: 0 auto;
+        height: 750px;
+        overflow: auto;
+        display: none;
+    }
+
+
+
 }
+
+
+
+
+

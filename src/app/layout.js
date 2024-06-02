@@ -1,31 +1,50 @@
-export default function RootLayout({ children, facebookPixelId }) {
+"use client";
+import "./styles/styles.css"
+import "./styles/app.css"
+import Header from './Home/header';
+import Footer from './Home/footer';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
+export default function RootLayout({ children }) {
+  useEffect(() => {
+    // Insert your GTM script here
+    // Example:
+    const script = document.createElement('script');
+    script.src = `https://www.googletagmanager.com/gtm.js?id=GTM-MRPG83NT`;
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Clean up the script when the component unmounts
+      document.body.removeChild(script);
+    };
+  }, []); // Empty dependency array ensures this runs only once
+
   return (
     <html lang="en">
-      <script id='fb-pixel' strategy='afterInteractive'>
-        {`
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '2143908482640282');
-          fbq('track', 'PageView');
-        `}
-      </script>
-      <body>{children}</body>
-  
-      <noscript>
-        <img
-          height='1'
-          width='1'
-          
-          alt={'facebook pixel no script image'}
-          src={`https://www.facebook.com/tr?id=2143908482640282&ev=PageView&noscript=1`}
+      <Head>
+        <title>Your Page Title</title>
+        <meta name="description" content="Your page description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        {/* Add additional meta tags or link elements as needed */}
+      </Head>
+      <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `
+              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRPG83NT"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            `,
+          }}
         />
-      </noscript>
+        {/* End Google Tag Manager (noscript) */}
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

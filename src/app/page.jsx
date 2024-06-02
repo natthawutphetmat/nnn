@@ -1,44 +1,71 @@
-
-
+import Image from 'next/image';
 import React from 'react';
-import Header from './Home/header';
 import Main from './Home/main';
+import Header from './Home/header';
 import Head from 'next/head';
+import { getData } from './data';
+import Link from 'next/link';
 
 
+export default async function HomePage() {
+  const data = await getData()
 
-
-
-export default function Page() {
-  
   return (
-
-
-<>
-
-
-
-  
-<Header/> 
-<header className="masthead">
-            <div className="box">
-            <a href="https://lin.ee/g1H4k9G" target='bank'> 
-              <img src="/imgs/1 (1).jpg" width="100%" alt="pgslot" />
-<img src="/imgs/btn1.gif" width="100%" alt="pgslot" />
-<img src="/imgs/1 (2).jpg" width="100%" alt="pgslot" />
-<img src="/imgs/btn2.gif" width="100%" alt="pgslot" />
-<img src="/imgs/1 (3).jpg" width="100%" alt="pgslot" />
-<img src="/imgs/btn3.gif" width="100%" alt="pgslot" />
-<img src="/imgs/1 (4).jpg" width="100%" alt="pgslot" />
-<img src="/imgs/btn1.gif" width="100%" alt="pgslot" />
-<img src="/imgs/1 (5).jpg" width="100%" alt="pgslot" />
-<img src="/imgs/btn1.gif" width="100%" alt="pgslot" />
-<img src="/imgs/1 (6).jpg" width="100%" alt="pgslot" />
-              </a>
-            </div>
-        </header>
-<Main/> 
     
-</>
+   <>
+    <header>
+            <div className="box">
+              {data.map(item => (
+                <div key={item.id}>
+                 <div className="item">
+                 <div className="image-slide">
+                  <Link href="https://lin.ee/g1H4k9G" target='bank'>    
+                <Image src={`/imgs/${item.img}`} width={400} height={400} className='img' alt="item" />
+
+                </Link>
+                 </div>
+                 </div>
+                </div>
+              ))}
+             
+             
+            </div>
+       
+
+<main>
+<div className="boxs">
+              {data.map(imgs => (
+                <div key={imgs.id}>
+                 <div className="item">
+                 <div className="image-slide">
+                <Image src={`/img/${imgs.img}`} width={400} height={400} className='img' alt="item" />
+                 </div>
+                 </div>
+                </div>
+              ))}
+             
+             
+            </div>
+
+</main>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Main />
+   
+   </>
   );
-}
+};
