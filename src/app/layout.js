@@ -6,32 +6,41 @@ import Footer from './Home/footer';
 import Head from 'next/head';
 import { useEffect } from 'react';
 
+
+
+export const metadata = () => {
+ 
+  return {
+    title: "PG Games สล็อตpg สล็อตเว็บตรง สล็อตแตกง่าย",
+    description: " ความแตกต่างที่เป็นตัวตัดสิน pg slot game และยังมีโปรโมชั่นแจกให้กับสมาชิกทุกท่านอีกด้วย",
+    icon: "https://www.chaiyoloan.com/img/logo.jpg",
+    ogtitle: "PG Games สล็อตpg สล็อตเว็บตรง สล็อตแตกง่าย",
+    ogdescription: " ความแตกต่างที่เป็นตัวตัดสิน pg slot game และยังมีโปรโมชั่นแจกให้กับสมาชิกทุกท่านอีกด้วย",
+    image: "https://www.chaiyoloan.com/img/logo.jpg"
+  };
+};
+
+
+
 export default function RootLayout({ children }) {
   useEffect(() => {
-    // Insert your GTM script here
-    // Example:
+
     const script = document.createElement('script');
     script.src = `https://www.googletagmanager.com/gtm.js?id=GTM-MRPG83NT`;
     script.async = true;
     document.body.appendChild(script);
 
     return () => {
-      // Clean up the script when the component unmounts
+     
       document.body.removeChild(script);
     };
-  }, []); // Empty dependency array ensures this runs only once
+  }, []); 
 
   return (
     <html lang="en">
-      <Head>
-        <title>Your Page Title</title>
-        <meta name="description" content="Your page description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        {/* Add additional meta tags or link elements as needed */}
-      </Head>
+      
       <body>
-        {/* Google Tag Manager (noscript) */}
+       
         <noscript
           dangerouslySetInnerHTML={{
             __html: `
@@ -40,7 +49,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        {/* End Google Tag Manager (noscript) */}
+
         <Header />
         <main>{children}</main>
         <Footer />
