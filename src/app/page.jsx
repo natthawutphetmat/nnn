@@ -13,6 +13,18 @@ export default async function HomePage() {
   return (
     
    <>
+
+<Head>
+         <title>PG Games สล็อตpg สล็อตเว็บตรง สล็อตแตกง่าย</title>
+        <meta name="description" content="ความแตกต่างที่เป็นตัวตัดสิน pg slot game และยังมีโปรโมชั่นแจกให้กับสมาชิกทุกท่านอีกด้วย" />
+       
+         <meta name="og:title"  content="PG Games สล็อตpg สล็อตเว็บตรง สล็อตแตกง่าย"/>
+         <meta name="og:description"  content="ความแตกต่างที่เป็นตัวตัดสิน pg slot game และยังมีโปรโมชั่นแจกให้กับสมาชิกทุกท่านอีกด้วย"/>
+         <meta name="image" content="https://www.chaiyoloan.com/img/logo.jpg"/>
+         <meta name="og:image" content="https://www.chaiyoloan.com/img/logo.jpg"/>
+
+
+       </Head>
     <header>
             <div className="box">
               {data.map(item => (
