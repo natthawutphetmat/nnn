@@ -1,0 +1,55 @@
+
+  .imges {
+    max-width: 400px;
+  
+}
+
+.imges img {
+    width: 100%;
+}
+
+.boximg {
+  max-width: 400px;
+  margin: auto;
+}
+
+.boximg img {
+  width: 100%;
+}
+.item {
+  display: flex;
+}
+
+.pixcel {
+  max-width: 400px;
+  box-shadow: 0px 2px 10px 3px #000;
+  margin: 100px auto;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: scroll;
+}
+.url {
+  max-width: 400px;
+  box-shadow: 0px 2px 10px 3px #000;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: scroll;
+}
+
+.imge {
+ max-width: 600px;
+    overflow: auto;
+    cursor: default; 
+
+}
+.box img {
+  width: 100%;
+}
+
