@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Header from './Home/header';
 import Main from './Home/main';
 import Footer from './Home/footer';
+import Head from 'next/head';
+
 
 export default function Fb() {
 
@@ -58,7 +60,15 @@ export default function Fb() {
 
 
   return (
-    <main>
+    <>
+    <Head>
+
+
+
+
+
+      
+    </Head>
 
       <div>
     <Pixel name='FACEBOOK_PIXEL_1' />
@@ -100,6 +110,6 @@ export default function Fb() {
      <Header/>
      <Main/>
      <Footer/>
-    </main>
+    </>
   )
 }

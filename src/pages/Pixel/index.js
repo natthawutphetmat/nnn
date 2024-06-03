@@ -3,7 +3,7 @@ import Head  from 'next/head'
 
 import FACEBOOK_PIXEL_1 from './facebook/pixel-1'
 
-export default ({name}) => {
+export default function Pixel({name})  {
 
   return(
     <Head>
