@@ -51,12 +51,15 @@ header {
 .btns {
   position: fixed;
 z-index: 150;
+top: 120%;
 
 
 }
 
 
-
+.logo {
+  width: 50px;
+}
 
 
 
@@ -87,8 +90,8 @@ z-index: 150;
     .btns {
       position: fixed;
     z-index: 150;
-    top: 700px;
-    left: 40%;
+    top: 650px;
+    left: 35%;
     
     }
     
