@@ -5,6 +5,7 @@ import Header from './Home/header';
 import Main from './Home/main';
 import Footer from './Home/footer';
 import Head from 'next/head';
+import Link from 'next/link';
 
 
 export default function Fb() {
@@ -53,7 +54,7 @@ export default function Fb() {
   }
   const goto = () => {
   
-    window.location.href=" ";   //ใส่ url
+    window.location.href="#";   //ใส่ url
 
 
   }
@@ -61,20 +62,14 @@ export default function Fb() {
 
   return (
     <>
-    <Head>
-
-
-
-
-
-      
-    </Head>
+ 
 
       <div>
     <Pixel name='FACEBOOK_PIXEL_1' />
   </div>
 
-<header>  
+<header> 
+
 <div className="boxs">
 <div className="image-slide">
 <p onClick={nopage}> 
@@ -104,6 +99,7 @@ export default function Fb() {
       <Image src={`/imgs/${data[8].img}`} width={400} height={400} alt="img" />
       </p> </div>   </div>
 
+      <button className='btns btn btn-danger' onClick={goto}>สมัครสมาชิด</button>
 
       </header>
 
