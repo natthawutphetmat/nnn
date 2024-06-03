@@ -23,14 +23,6 @@ export async function getData() {
     {
       "id": 6,
       "img": "6.jpg"
-    },
-    {
-      "id": 7,
-      "img": "7.jpg"
-    },
-    {
-      "id": 8,
-      "img": "8.jpg"
     }
   ];
 
