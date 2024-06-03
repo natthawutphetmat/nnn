@@ -62,6 +62,14 @@ export default function Fb() {
 
   return (
     <>
+    <Head>
+    <title>PG Slot เว็บตรง สล็อต Pg เว็บตรง ปลอดภัย 100% ใหม่ล่าสุด</title>
+    <meta name="description" content="สล็อตเว็บตรง แตกหนัก ไม่มีขั้นต่ำ ไม่ผ่านเอเย่นต์ เว็บสล็อต PG SLOT สล็อต PG ทดลองเล่นฟรี คาสิโอออนไลน์และแทงบอล สล็อต PG"/>
+    <meta property="og:title" content="PG Slot เว็บตรง สล็อต Pg เว็บตรง ปลอดภัย 100% ใหม่ล่าสุด"/>  
+    <meta property="og:description" content="สล็อตเว็บตรง แตกหนัก ไม่มีขั้นต่ำ ไม่ผ่านเอเย่นต์ เว็บสล็อต PG SLOT สล็อต PG ทดลองเล่นฟรี คาสิโอออนไลน์และแทงบอล สล็อต PG"/> 
+    <meta name="twitter:image" content="/img/logo.png"/>
+    <meta property="og:image" content="/img/logo.png"/>  
+    </Head>
  
 
       <div>

@@ -1,9 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
 
 function header() {
   return (
     <div>
+          <Head>
+    <title>PG Slot เว็บตรง สล็อต Pg เว็บตรง ปลอดภัย 100% ใหม่ล่าสุด</title>
+    <meta name="description" content="สล็อตเว็บตรง แตกหนัก ไม่มีขั้นต่ำ ไม่ผ่านเอเย่นต์ เว็บสล็อต PG SLOT สล็อต PG ทดลองเล่นฟรี คาสิโอออนไลน์และแทงบอล สล็อต PG"/>
+    <meta property="og:title" content="PG Slot เว็บตรง สล็อต Pg เว็บตรง ปลอดภัย 100% ใหม่ล่าสุด"/>  
+    <meta property="og:description" content="สล็อตเว็บตรง แตกหนัก ไม่มีขั้นต่ำ ไม่ผ่านเอเย่นต์ เว็บสล็อต PG SLOT สล็อต PG ทดลองเล่นฟรี คาสิโอออนไลน์และแทงบอล สล็อต PG"/> 
+    <meta name="twitter:image" content="/img/logo.png"/>
+    <meta property="og:image" content="/img/logo.png"/>  
+    </Head>
       
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div className="container">
