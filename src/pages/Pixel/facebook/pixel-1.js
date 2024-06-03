@@ -22,7 +22,7 @@ const FacebookPixel = () => (
           `,
         }}
       />
-    </head>
+
     <noscript>
       <img
         height="1"
@@ -31,6 +31,7 @@ const FacebookPixel = () => (
         src="https://www.facebook.com/tr?id=2143908482640282&ev=PageView&noscript=1"
       />
     </noscript>
+    </head>
   </>
 );
 
