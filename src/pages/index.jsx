@@ -54,7 +54,7 @@ export default function Fb() {
   }
   const goto = () => {
   
-    window.location.href="https://lin.ee/r1ETqu3";   //ใส่ url
+    window.location.href="http://account.45796687.com/register?lg=th";   //ใส่ url
 
 
   }
