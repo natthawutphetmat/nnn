@@ -54,7 +54,7 @@ export default function Fb() {
   }
   const goto = () => {
   
-    window.location.href="https://play.luckily168.bet/?ref=GTZW5BC2";   //ใส่ url
+    window.location.href="https://lin.ee/r1ETqu3";   //ใส่ url
 
 
   }
