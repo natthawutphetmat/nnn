@@ -13,27 +13,27 @@ export default function Fb() {
   const data = [
     {
       "id": 1,
-      "img": "1.jpg"
+      "imgs": "1.jpg"
     },
     {
       "id": 2,
-      "img": "btn1.gif"
+      "imgs": "btn1.gif"
     },
     {
       "id": 3,
-      "img": "2.jpg"
+      "imgs": "2.jpg"
     },
     {
       "id": 4,
-      "img": "btn2.gif"
+      "imgs": "btn2.gif"
     },
     {
       "id": 5,
-      "img": "3.jpg"
+      "imgs": "3.jpg"
     },
     {
       "id": 6,
-      "img": "btn3.gif"
+      "imgs": "btn3.gif"
     },
     {
       "id": 7,
@@ -41,11 +41,11 @@ export default function Fb() {
     },
     {
       "id": 8,
-      "img": "5.jpg"
+      "imgs": "5.jpg"
        },
     {
       "id": 9,
-      "img": "6.jpg"
+      "imgs": "6.jpg"
     }
   ];
 // ******************************************************************************************************************************************************
