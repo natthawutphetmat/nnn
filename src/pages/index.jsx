@@ -13,27 +13,27 @@ export default function Fb() {
   const data = [
     {
       "id": 1,
-      "imgs": "1.jpg"
+      "img": "1.jpg"
     },
     {
       "id": 2,
-      "imgs": "btn1.gif"
+      "img": "btn1.gif"
     },
     {
       "id": 3,
-      "imgs": "2.jpg"
+      "img": "2.jpg"
     },
     {
       "id": 4,
-      "imgs": "btn2.gif"
+      "img": "btn2.gif"
     },
     {
       "id": 5,
-      "imgs": "3.jpg"
+      "img": "3.jpg"
     },
     {
       "id": 6,
-      "imgs": "btn3.gif"
+      "img": "btn3.gif"
     },
     {
       "id": 7,
@@ -41,11 +41,11 @@ export default function Fb() {
     },
     {
       "id": 8,
-      "imgs": "5.jpg"
+      "img": "5.jpg"
        },
     {
       "id": 9,
-      "imgs": "6.jpg"
+      "img": "6.jpg"
     }
   ];
 // ******************************************************************************************************************************************************
@@ -73,15 +73,15 @@ export default function Fb() {
 <div className="boxs">
 <div className="image-slide">
 <p onClick={nopage}> 
-      <Image src={`/imgs/${data[0].img}`} width={400} height={400} alt="img" />
+      <Image src={`/img/${data[0].img}`} width={400} height={400} alt="img" />
       <Image src={`/imgs/${data[1].img}`} width={400} height={80} alt="img" />
-      <Image src={`/imgs/${data[2].img}`} width={400} height={400} alt="img" />
+      <Image src={`/img/${data[2].img}`} width={400} height={400} alt="img" />
       <Image src={`/imgs/${data[3].img}`} width={400} height={80} alt="img" />
-      <Image src={`/imgs/${data[4].img}`} width={400} height={400} alt="img" />
+      <Image src={`/img/${data[4].img}`} width={400} height={400} alt="img" />
       <Image src={`/imgs/${data[5].img}`} width={400} height={80} alt="img" />
-      <Image src={`/imgs/${data[6].img}`} width={400} height={400} alt="img" />
-      <Image src={`/imgs/${data[7].img}`} width={400} height={400} alt="img" />
-      <Image src={`/imgs/${data[8].img}`} width={400} height={400} alt="img" />
+      <Image src={`/img/${data[6].img}`} width={400} height={400} alt="img" />
+      <Image src={`/img/${data[7].img}`} width={400} height={400} alt="img" />
+      <Image src={`/img/${data[8].img}`} width={400} height={400} alt="img" />
       </p>
       </div>   </div>
 
