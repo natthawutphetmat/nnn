@@ -73,15 +73,15 @@ export default function Fb() {
 <div className="boxs">
 <div className="image-slide">
 <p onClick={nopage}> 
-      <Image src={`/img/${data[0].img}`} width={400} height={400} alt="img" />
+      <Image src={`/imgs/${data[0].img}`} width={400} height={400} alt="img" />
       <Image src={`/imgs/${data[1].img}`} width={400} height={80} alt="img" />
-      <Image src={`/img/${data[2].img}`} width={400} height={400} alt="img" />
+      <Image src={`/imgs/${data[2].img}`} width={400} height={400} alt="img" />
       <Image src={`/imgs/${data[3].img}`} width={400} height={80} alt="img" />
-      <Image src={`/img/${data[4].img}`} width={400} height={400} alt="img" />
+      <Image src={`/imgs/${data[4].img}`} width={400} height={400} alt="img" />
       <Image src={`/imgs/${data[5].img}`} width={400} height={80} alt="img" />
-      <Image src={`/img/${data[6].img}`} width={400} height={400} alt="img" />
-      <Image src={`/img/${data[7].img}`} width={400} height={400} alt="img" />
-      <Image src={`/img/${data[8].img}`} width={400} height={400} alt="img" />
+      <Image src={`/imgs/${data[6].img}`} width={400} height={400} alt="img" />
+      <Image src={`/imgs/${data[7].img}`} width={400} height={400} alt="img" />
+      <Image src={`/imgs/${data[8].img}`} width={400} height={400} alt="img" />
       </p>
       </div>   </div>
 
