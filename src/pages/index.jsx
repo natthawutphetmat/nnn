@@ -54,7 +54,7 @@ export default function Fb() {
   }
   const goto = () => {
   
-    window.location.href="https://lin.ee/KslBgLFth";   //ใส่ url
+    window.location.href="https://lin.ee/KslBgLF";   //ใส่ url
 
 
   }
